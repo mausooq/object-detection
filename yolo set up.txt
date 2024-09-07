@@ -1,0 +1,25 @@
+py -3.9 -m venu myvenu
+
+myvenu\Scripts\activate
+
+python -m pip install --upgrade pip
+
+pip install ultralytics
+
+
+Modes : train , val(validate) , predict
+
+tasks : detect ,segment , classify
+
+data : Format can differ for task type. Supoorts data.yml , data_folder , dataset_name
+
+
+for detection --> using CMD --> yolo task=detect mode=predict model=yolov8n.pt source="images/1.jpg"
+
+for segementation --> using CMD --> yolo task=segment mode=predict model=yolov8n-seg.pt source="images/3.jp
+g"
+
+
+
+for classify --> using CMD --> yolo task=classfiy mode=predict model=yolov8n-cls.pt source="images/3.jp
+g"
